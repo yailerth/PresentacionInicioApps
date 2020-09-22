@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">PresentacionInicioApps</string>
+
+    <string name="info_abworkou">
+        <![CDATA[
+        <p> <font color=\'#41A8BF\' size=\'48\'><big>EL MEJOR ENTRENAMIENTO DE ABDOMINALES</big></font></p>
+
+        <p>
+            <small>
+                Cada uno de estos entrenamientos abdominales es un mini circuito que puede hacer al final de su entrenamiento principal.
+                Los circuitos están diseñados para trabajar la máxima cantidad de fibras musculares de la forma más rápida y eficaz posible,
+                por lo que harás los cuatro movimientos en orden, respetando las repeticiones y los períodos de descanso detallados.
+                El primer movimiento de cada circuito es el más difícil, luego se vuelven progresivamente más fáciles a medida que aumenta el número de repeticiones por movimiento.
+                Esto ejercita los abdominales con más fuerza y ​​los coloca bajo una mayor tensión durante más tiempo, que es en última instancia lo que estimula el crecimiento muscular.
+                Después del movimiento final, descanse durante el tiempo asignado y luego repita el circuito. Haz tres circuitos en total.
+            </small>
+        </p>
+        ]]>
+    </string>
+
+
+
+    <string name="info_segur">
+        <![CDATA[
+        <p> <font color=\'#41A8BF\' size=\'48\'><big>CUIDATE...</big>\u26A0 </font></p>
+
+        <p>
+            <small>
+                Consulte a su médico antes de comenzar con este programa de entrenamiento, como lo haría con cualquier programa de ejercicios y nutrición.
+                Al participar en este programa de ejercicios abdominales, reconoce que a psear de las recomendaciones dadas por parte de EmFitnes,
+                existe la posibilidad de riesgos de lesiones físicas como resultado del uso o mal uso del programa. Si decides participar en este programa de
+                ejercicios abdominales, aceptas que lo haces bajo tu propio riesgo y asumes dichos
+                riesgos aceptando liberarnos de cualquier reclamo que pueda tener contra EmFitness.
+            </small>
+        </p>
+        ]]>
+    </string>
+</resources>
