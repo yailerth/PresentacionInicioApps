@@ -3,19 +3,23 @@ package com.example.presentacioninicioapps;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.text.Html;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     private ViewPager viewPagerPresent;
     private LinearLayout pointLayout;
-    private Button btnNext, btnBack;
+    private Button btnNext;
     private int currentPage;
+
 
     private TextView[] linearPoint;
 
@@ -28,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
 
         viewPagerPresent = (ViewPager)findViewById(R.id.viewPagerPresent);
         pointLayout = (LinearLayout)findViewById(R.id.linearPoint);
-        btnBack = (Button)findViewById(R.id.btn_back);
         btnNext = (Button)findViewById(R.id.btn_next);
 
         sliderAdapter = new SliderAdapter(this);
@@ -40,17 +43,16 @@ public class MainActivity extends AppCompatActivity {
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                viewPagerPresent.setCurrentItem(currentPage + 1);
+
+                SharedPreferences datos1 = PreferenceManager.getDefaultSharedPreferences(MainActivity.this);
+                SharedPreferences.Editor miEditor1 = datos1.edit();
+
+                miEditor1.putString("bandera","1");
+                miEditor1.apply();
+                finish();
+
             }
         });
-
-        btnBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                viewPagerPresent.setCurrentItem(currentPage - 1);
-            }
-        });
-
     }
 
     public void addLinearPoint(int position){
@@ -59,13 +61,13 @@ public class MainActivity extends AppCompatActivity {
         for (int i=0; i< linearPoint.length; i++){
             linearPoint [i]= new TextView(this);
             linearPoint [i].setText(Html.fromHtml("<span style=letter-spacing:3px>&#8226;</span> "));
-            linearPoint [i].setTextSize(33);
-            linearPoint [i].setTextColor(getResources().getColor(R.color.colorTransparentEhite));
+            linearPoint [i].setTextSize(32);
+            linearPoint [i].setTextColor(getResources().getColor(R.color.colorIcon));
 
             pointLayout.addView(linearPoint[i]);
         }
         if (linearPoint.length>0){
-            linearPoint[position].setTextColor(getResources().getColor(R.color.ColorFondo));
+            linearPoint[position].setTextColor(getResources().getColor(R.color.colorWhite));
             linearPoint[position].setTextSize(35);
         }
     }
@@ -83,27 +85,15 @@ public class MainActivity extends AppCompatActivity {
             currentPage = i;
 
             if (i<=0){
-                btnBack.setEnabled(false);
-                btnNext.setEnabled(true);
-                btnBack.setVisibility(View.INVISIBLE);
-
-                btnNext.setText("Next");
-                btnBack.setText("");
-
+                btnNext.setEnabled(false);
             }else if (i == linearPoint.length-1){
-                btnBack.setEnabled(true);
                 btnNext.setEnabled(true);
-                btnBack.setVisibility(View.VISIBLE);
-
+                btnNext.setVisibility(View.VISIBLE);
                 btnNext.setText("Finish");
-                btnBack.setText("Back");
-            }else{
-                btnBack.setEnabled(true);
-                btnNext.setEnabled(true);
-                btnBack.setVisibility(View.VISIBLE);
 
-                btnNext.setText("Next");
-                btnBack.setText("Back");
+            }else{
+                btnNext.setEnabled(false);
+                btnNext.setVisibility(View.INVISIBLE);
             }
 
         }

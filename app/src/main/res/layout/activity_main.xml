@@ -54,6 +54,7 @@
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
             android:text="NEXT"
+            android:visibility="invisible"
 
             android:textColor="@color/colorWhite"
             app:layout_constraintBottom_toBottomOf="parent"
