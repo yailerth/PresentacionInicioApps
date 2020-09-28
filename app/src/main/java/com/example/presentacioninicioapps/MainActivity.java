@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     private ViewPager viewPagerPresent;
     private LinearLayout pointLayout;
-    private Button btnNext;
+    private Button btnNext,btnBack;
     private int currentPage;
 
 
@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         viewPagerPresent = (ViewPager)findViewById(R.id.viewPagerPresent);
         pointLayout = (LinearLayout)findViewById(R.id.linearPoint);
         btnNext = (Button)findViewById(R.id.btn_next);
+        btnBack = (Button)findViewById(R.id.btn_back);
 
         sliderAdapter = new SliderAdapter(this);
         viewPagerPresent.setAdapter(sliderAdapter);
@@ -44,15 +45,34 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                SharedPreferences datos1 = PreferenceManager.getDefaultSharedPreferences(MainActivity.this);
-                SharedPreferences.Editor miEditor1 = datos1.edit();
+                if (currentPage<=0){
+                    viewPagerPresent.setCurrentItem(currentPage+1);
 
-                miEditor1.putString("bandera","1");
-                miEditor1.apply();
-                finish();
+                }else if (currentPage == linearPoint.length-1){
+                    //viewPagerPresent.setCurrentItem(currentPage+1);
+                    SharedPreferences datos1 = PreferenceManager.getDefaultSharedPreferences(MainActivity.this);
+                    SharedPreferences.Editor miEditor1 = datos1.edit();
+
+                    miEditor1.putString("bandera","1");
+                    miEditor1.apply();
+                    finish();
+                    //Toast.makeText(MainActivity.this,"pagina: " + currentPage,Toast.LENGTH_SHORT).show();
+
+                }else{
+                    viewPagerPresent.setCurrentItem(currentPage+1);
+                }
 
             }
         });
+
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                viewPagerPresent.setCurrentItem(currentPage-1);
+            }
+        });
+
+
     }
 
     public void addLinearPoint(int position){
@@ -85,17 +105,22 @@ public class MainActivity extends AppCompatActivity {
             currentPage = i;
 
             if (i<=0){
-                btnNext.setEnabled(false);
+                btnNext.setEnabled(true);
+                btnNext.setVisibility(View.VISIBLE);
+                btnBack.setVisibility(View.INVISIBLE);
+                btnNext.setText("Siguiente");
+
             }else if (i == linearPoint.length-1){
                 btnNext.setEnabled(true);
                 btnNext.setVisibility(View.VISIBLE);
-                btnNext.setText("Finish");
+                btnNext.setText("Iniciar");
 
             }else{
-                btnNext.setEnabled(false);
-                btnNext.setVisibility(View.INVISIBLE);
+                btnNext.setEnabled(true);
+                btnNext.setVisibility(View.VISIBLE);
+                btnBack.setVisibility(View.VISIBLE);
+                btnNext.setText("Siguiente");
             }
-
         }
 
         @Override

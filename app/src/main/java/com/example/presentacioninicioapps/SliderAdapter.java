@@ -37,7 +37,7 @@ public class SliderAdapter extends PagerAdapter {
     public String[] slide_headings ={
             "ABS Workout",
             "Nutrición",
-            "Cuidate"
+            "Aviso legal"
 
     };
 
@@ -45,7 +45,7 @@ public class SliderAdapter extends PagerAdapter {
 
             //context.getResources().getString(R.string.info_abworkou),
             R.string.info_abworkou,
-            R.string.info_abworkou,
+            R.string.info_nutri,
             R.string.info_segur
 
     };

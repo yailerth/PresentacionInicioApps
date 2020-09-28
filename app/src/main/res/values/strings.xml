@@ -3,18 +3,58 @@
 
     <string name="info_abworkou">
         <![CDATA[
-        <p> <font color=\'#41A8BF\' size=\'48\'><big>EL MEJOR ENTRENAMIENTO DE ABDOMINALES</big></font></p>
+        <p> <font color=\'#41A8BF\' size=\'48\'><big>¿Estás lista para un desafío de entrenamiento de abdominales?</big></font></p>
 
-        <p>
+        </b>
             <small>
-                Cada uno de estos entrenamientos abdominales es un mini circuito que puede hacer al final de su entrenamiento principal.
-                Los circuitos están diseñados para trabajar la máxima cantidad de fibras musculares de la forma más rápida y eficaz posible,
-                por lo que harás los cuatro movimientos en orden, respetando las repeticiones y los períodos de descanso detallados.
-                El primer movimiento de cada circuito es el más difícil, luego se vuelven progresivamente más fáciles a medida que aumenta el número de repeticiones por movimiento.
-                Esto ejercita los abdominales con más fuerza y ​​los coloca bajo una mayor tensión durante más tiempo, que es en última instancia lo que estimula el crecimiento muscular.
-                Después del movimiento final, descanse durante el tiempo asignado y luego repita el circuito. Haz tres circuitos en total.
+                <strong>EmFitness</strong>, te mostrará una serie de ejercicios para todos los niveles, desde principiantes hasta avanzados,
+                que podrás hacer durante los próximos 24 días, los cuales te ayudarán a dividir esa sección media y te dará un
+                 impulso para que tus <strong>abdominales se vean geniales</strong> y luzcas un <strong>abdomen muy sexi</strong>.
             </small>
-        </p>
+        <br/>
+        <br/>
+        </b>
+            <small>
+                No se requiere de <strong>ningún tipo de equipo</strong> para realizar estas rutinas de ejercicios abdominales. Podrás hacer este
+                tipo de entrenamientos en solo minutos y <strong>desde la comodidad de tu hogar</strong> o en el gimnasio si así lo deseas.
+                La clave para este plan de ejercicios abdominales está en que los realices durante 24 días seguidos.
+                Esto te brindará la oportunidad de comenzar a ver cambios notables en tus ABS, y si combinas esto con un esfuerzo
+                dedicado para <strong>mejorar tu nutrición</strong>, podrás ver resultados fascinantes en muy poco tiempo.
+            </small>
+        <br/>
+        <br/>
+        </b>
+            <small>
+                Fija tus objetivos personales y niveles de condición física, <strong>EmFitness te ayudará</strong> a cumplirlos, ya que nuestros
+                entrenamientos se adaptan para aquellos que no pueden ir a un gimnasio por <strong>falta de tiempo</strong>, viajan con regularidad
+                 o simplemente quieren probar con algo que <strong>realmente funcione</strong>.
+            </small>
+        <br/>
+        <br/>
+        ]]>
+    </string>
+
+
+
+    <string name="info_nutri">
+        <![CDATA[
+        <p> <font color=\'#41A8BF\' size=\'48\'><big>¿Quieres perder peso y eliminar la grasa abdominal?</big></font></p>
+
+        </b>
+            <small>
+                Para hacer <strong>visible tu abdomen</strong> es necesario empezar a eliminar la grasa ubicada en tu zona abdominal,
+                y esto solo es posible <strong>mejorando tus hábitos alimenticios</strong> y siguiendo un plan de entrenamiento abdominal.
+            </small>
+        <br/>
+        <br/>
+        </b>
+            <small>
+                <strong>EmFitness</strong> te ofrece un <strong>plan de comidas saludables</strong> especialmente diseñado para ti,  el cual te ayudará a lograr
+                tus objetivos de salud, <strong>pérdida de peso</strong> y a construir un estilo de vida más saludable. Si te niegas a prestar
+                atención a la calidad de tu nutrición y la comida que consumes, nunca lograrás esos <strong>niveles bajos de grasa
+                corporal</strong> que se necesitan para un <strong>abdomen sexi</strong>.
+            </small>
+        <br/>
         <br/>
         ]]>
     </string>
@@ -22,18 +62,20 @@
 
     <string name="info_segur">
         <![CDATA[
-        <p> <font color=\'#41A8BF\' size=\'48\'><big>CUIDATE...</big>\u26A0 </font></p>
+        <p> <font color=\'#41A8BF\' size=\'48\'><big>Descargo de responsabilidad</big>\u26A0 </font></p>
 
-        <p>
+        </b>
             <small>
-                Consulte a su médico antes de comenzar con este programa de entrenamiento, como lo haría con cualquier programa de ejercicios y nutrición.
-                Al participar en este programa de ejercicios abdominales, reconoce que a psear de las recomendaciones dadas por parte de EmFitnes,
-                existe la posibilidad de riesgos de lesiones físicas como resultado del uso o mal uso del programa. Si decides participar en este programa de
-                ejercicios abdominales, aceptas que lo haces bajo tu propio riesgo y asumes dichos
-                riesgos aceptando liberarnos de cualquier reclamo que pueda tener contra EmFitness.
+                Consulte a su médico antes de comenzar con este programa de entrenamiento como lo haría con cualquier programa de
+                ejercicios y nutrición. Al <strong>continuar</strong> con el programa de ejercicios abdominales, reconoce que a pesar de las recomendaciones
+                dadas por parte de EmFitness, existe la posibilidad de riesgos de lesiones físicas como resultado del uso o mal uso del programa.
+                Si decides participar en este programa de ejercicios abdominales, aceptas que lo haces bajo tu propio riesgo y asumes dichos
+                riesgos aceptando excluir a <strong>EmFitness</strong>, de cualquier reclamo o imputación de alguna responsabilidad legal o culpa por daño o
+                pérdida monetaria debido a la información aquí contenida.
             </small>
-        </p>
+        <br/>
         <br/>
         ]]>
     </string>
+
 </resources>
